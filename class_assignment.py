@@ -181,7 +181,7 @@ def solve_class_assignment_final():
             total_score = class_df['score'].sum()
             avg_score = class_df['score'].mean()
             gender_dist = class_df['sex'].value_counts()
-            leadership_count = class_df[df['Leadership'] == 'yes'].shape[0]
+            leadership_count = class_df[class_df['Leadership'] == 'yes'].shape[0]
             
             print(f"\n[ {c+1}반 편성 결과 ] (총 {len(class_assignments[c])}명)")
             print(f"  - 성적 총점: {total_score:.0f} (평균: {avg_score:.2f})")
